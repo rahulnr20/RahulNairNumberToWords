@@ -17,15 +17,5 @@ namespace RahulNairNumberToWords.Controllers
             person.numberInWords = Helper.NumberToWords(person.number);
             return View(person);
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
