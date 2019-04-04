@@ -1,0 +1,30 @@
+﻿@model RahulNairNumberToWords.Models.Person
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/app.css" rel="stylesheet" />
+    <title>Information</title>
+</head>
+<body>
+    @using (Html.BeginForm("DetailsSummary", "Person", FormMethod.Post))
+    {
+    <div class="container">
+        <h3 class="form-signin-heading">Enter Details</h3>
+        <label for="lblName" class="sr-only">Name</label>
+        <input type="text" name="name" id="txtName" class="form-control" placeholder="Name" required autofocus>
+        <label for="lblnumber" class="sr-only">Number</label>
+        <input type="number" step="any" id="number" name="number" class="form-control" placeholder="Number" required>
+        <div align="right">
+            <button class="btn btn-sm btn-success" type="submit">Submit</button>
+            <button class="btn btn-sm btn-danger" type="button">Reset</button>
+        </div>
+    </div>
+
+
+            }
+    </body>
+</html>
